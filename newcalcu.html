@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  
+</head>
+<body class="container">
+  <h2 style="margin-top: 20px">Calculator</h2>
+  <div style="background-color: grey; width: 200px;margin-top: 20px;">
+  <input style="width: 200px" type="text" id="n1" placeholder="Enter First Number"><br><br>
+
+  
+  <select style="width: 150px; text-align: center; margin-left: 22px"  id="opr">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+  </select><br><br>
+    <input style="width: 200px" type="text" id="n2" placeholder="Enter Second Number"><br><br>  
+  <button style="width: 150px; margin-left: 22px" onclick="calc()">=</button>
+  <br><br>
+  <input style="width: 200px" type="text" id="result" name="result" placeholder="0" >
+
+  </div>
+
+  <script type="text/javascript">
+               
+
+        var fInput;
+        var sInput;
+        var output;
+
+      
+  function add(fInput,sInput)
+
+    {
+      output =  fInput+sInput;
+      
+    }
+    function sub(fInput,sInput)
+    {
+      output =  fInput-sInput;
+    }
+    function mul(fInput,sInput)
+    {
+       output =  fInput*sInput;
+    }
+    function div(fInput,sInput)
+    {
+      output =  fInput/sInput;
+    }
+  function calc()
+    {
+    
+
+     opr= document.getElementById("opr").value ;
+     fInput= Number(document.getElementById("n1").value);
+     sInput= Number(document.getElementById("n2").value);
+
+      switch(opr) {
+
+          case "+":
+          add(fInput,sInput);
+          break;
+
+          case "-":
+            sub(fInput,sInput);
+          break;
+
+          case "*":
+            mul(fInput,sInput);
+          break;
+          case "/":
+            div(fInput,sInput);
+          break;
+      
+        } 
+        document.getElementById("result").value = output;
+    }
+  </script>
+
+</body>
+</html>
