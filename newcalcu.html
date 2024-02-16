@@ -6,25 +6,39 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  
+  <style>
+  	body {
+    background-image: url("https://img.freepik.com/free-photo/workspace-with-office-supplies_140725-23289.jpg?w=996&t=st=1708073471~exp=1708074071~hmac=bdb887467a98b707d3f6521f095ff23920cf745f41e89d5c0ff0e533d15481ec");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+   margin: 0;
+  padding: 0;
+  height: 95vh;
+  }
+  </style>
 </head>
 <body class="container">
-  <h2 style="margin-top: 20px">Calculator</h2>
-  <div style="background-color: grey; width: 200px;margin-top: 20px;">
-  <input style="width: 200px" type="text" id="n1" placeholder="Enter First Number"><br><br>
+
+	<div style="height: 400px;">
+	
+  <h2 style="margin-top: 30px; margin-left: 650px; color: white;">I can be U'r aCOUNTANT!</h2>
+  <div style=" width: 400px;margin-top: 40px; margin-left: 650px">
+  <input style="width: 400px; height: 50px;" type="text" id="n1" placeholder="enter a number"><br><br>
 
   
-  <select style="width: 150px; text-align: center; margin-left: 22px"  id="opr">
+  <select style="width: 350px; text-align: center; margin-left: 22px"  id="opr">
     <option value="+">+</option>
     <option value="-">-</option>
     <option value="*">*</option>
     <option value="/">/</option>
   </select><br><br>
-    <input style="width: 200px" type="text" id="n2" placeholder="Enter Second Number"><br><br>  
-  <button style="width: 150px; margin-left: 22px" onclick="calc()">=</button>
+    <input style="width: 400px; height: 50px;" type="text" id="n2" placeholder="enter another number"><br><br>  
+  <button style="width: 350px; margin-left: 22px" onclick="calc()">=</button>
   <br><br>
-  <input style="width: 200px" type="text" id="result" name="result" placeholder="0" >
+  <input style="width: 400px; height: 50px;" type="text" id="result" name="result" placeholder="here u go!" >
 
+  </div>
   </div>
 
   <script type="text/javascript">
